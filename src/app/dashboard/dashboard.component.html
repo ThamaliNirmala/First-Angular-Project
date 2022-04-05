@@ -1,0 +1,79 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+    <div class="container-fluid">
+      <h1 style="color: aliceblue;">Student Profile</h1>
+      <div class="d-flex">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-success"><i class="fa fa-plus" aria-hidden="true"></i> Add Student</button>
+      </div>
+    </div>
+  </nav>
+
+  <table class="table mt-3">
+      <thead>
+           <tr>
+               <th scope="col">Student ID</th>
+               <th scope="col">First Name</th>
+               <th scope="col">Last Name</th>
+               <th scope="col">Email</th>
+               <th scope="col">Contact Number</th>
+               <th scope="col">GPA</th>
+               <th scope="col">Action</th>
+           </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td>S01</td>
+              <td>Thamali</td>
+              <td>Nirmala</td>
+              <td>tnirmalaadasooriya@gmail.com</td>
+              <td>0770113437</td>
+              <td>3.2</td>
+              <td>
+                  <button class="btn btn-primary"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button>
+                  <button class="btn btn-danger mx-3"><i class="fa fa-window-close" aria-hidden="true" ></i> Delete</button>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+
+  
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Student Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form [formGroup] = "formValue">
+                <div class="mb-3">
+                  <label for="exampleInputFirstName" class="form-label">First Name</label>
+                  <input type="text" formControlName = "firstName" class="form-control" id="exampleInputFirstName">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputLastName" class="form-label">Last Name</label>
+                    <input type="text" formControlName = "lastName" class="form-control" id="exampleInputLastName">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail" class="form-label">Email</label>
+                    <input type="email" formControlName = "email" class="form-control" id="exampleInputEmail">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputContact" class="form-label">Contact Number</label>
+                    <input type="text" formControlName = "contact" class="form-control" id="exampleInputContact">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputGPA" class="form-label">GPA</label>
+                    <input type="text" formControlName = "gpa" class="form-control" id="exampleInputGPA">
+                  </div>
+                
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="close" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" (click)="postStudentDetails()" class="btn btn-primary">Add</button>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,43 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 2,
+      "firstName": "Kasun",
+      "lastName": "Perera",
+      "email": "kasun@gmail.com",
+      "contact": "0774087979",
+      "gpa": "3.4"
+    },
+    {
+      "id": 3,
+      "firstName": "Sahan",
+      "lastName": "Kumarasiri",
+      "email": "kumarasirisahan@gmail.com",
+      "contact": "0776135690",
+      "gpa": "3.7"
+    },
+    {
+      "id": 4,
+      "firstName": "Amali",
+      "lastName": "sanjeewani",
+      "email": "asanjeewani@gmail.com",
+      "contact": "0771662324",
+      "gpa": "3.4"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
