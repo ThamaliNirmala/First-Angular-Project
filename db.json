@@ -2,8 +2,11 @@
   "posts": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "firstName": "Thamali",
+      "lastName": "Nirmala",
+      "email": "tnirmalaadasooriya@gmail.com",
+      "contact": "0770113434",
+      "gpa": "3.5"
     },
     {
       "id": 2,
@@ -11,7 +14,7 @@
       "lastName": "Perera",
       "email": "kasun@gmail.com",
       "contact": "0774087979",
-      "gpa": "3.4"
+      "gpa": "3.5"
     },
     {
       "id": 3,
@@ -23,20 +26,14 @@
     },
     {
       "id": 4,
-      "firstName": "Amali",
-      "lastName": "sanjeewani",
-      "email": "asanjeewani@gmail.com",
-      "contact": "0771662324",
+      "firstName": "Amaya",
+      "lastName": "Shrimalee",
+      "email": "amaya@gmail.com",
+      "contact": "0776135691",
       "gpa": "3.4"
     }
   ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
+  "comments": [],
   "profile": {
     "name": "typicode"
   }
